@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+.introBox {
+  padding: 153.5px 0;
+  background-image: linear-gradient(black, black), url("../images/science-fiction-1424446.jpg");
+  background-repeat:repeat;
+  background-blend-mode: saturation;
+  background-position:fixed;
+  background-size: 1000px;;
+}
+
+img {
+  height: 550px;
+  margin-top: 0px;
+  margin: auto;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.introRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.introColumn {
+  margin-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  flex: 1;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.textBox>h1 {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  padding-bottom: 10px;
+  width: 500px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 20px;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+}
+
+.topLine {
+  color: #686868;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 16px;
+  letter-spacing: 1.4px;
+  margin-bottom: 16px;
+}
+
+.otherColor {
+  color: #c4649f;
+  font-family: 'Nunito', sans-serif;
+}
+
+button>p {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  padding: 10px 30px 10px 30px;
+}
+
+button {
+  background-color: rgb(131, 240, 229);
+  white-space: nowrap;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+button:hover {
+  border-radius: 4px;
+  background-color: #c4649f;
+  white-space: nowrap;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.githubIcon, .linkedIcon, .xingIcon {
+  color: white;
+  padding-left: 20px;
+  margin-top: 3px;
+}
+
+.subLine {
+display: flex;
+flex-direction: row;
+}
+
+.textWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 550px;
+  padding-top: 0;
+  padding-bottom: 60px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .textWrapper {
+    animation: Nav-logo-spin alternate 0.5s linear;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .introColumn {
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center
+  }
+  .textWrapper {
+    padding-bottom: 0;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+  .topLine {
+    margin-bottom: 0px;
+  }
+  .textBox>h1 {
+    font-size: 38px;
+    width: 350px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  button>p {
+    font-size: 15px;
+  }
+}
