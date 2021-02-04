@@ -24,7 +24,7 @@ const Home = () => {
               </p>
               <div className='subLine'>
                 <Link to='/contact'>
-                <button>
+                <button className="contactButton">
                   <p>
                     Contact me
                   </p>
@@ -43,7 +43,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img src={imageWebDev} alt='webdev' />
+        <img src={imageWebDev} alt='webdev' className="devImg" />
       </div>
     </div>
   )
