@@ -1,21 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 .introBox {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background-image: linear-gradient(black, black), url("../images/science-fiction-1424446.jpg");
-  background-repeat:repeat;
+  background-repeat: repeat;
   background-blend-mode: saturation;
-  background-position:center;
+  background-position: center;
   background-size: 800px;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
+
+.introBox::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
 
 .devImg {
   max-height: 500px;
-  padding: 25px 100px 100px 100px;
+  padding: 50px 80px 50px 100px;
   margin: auto;
+ 
 }
 
 .introRow {
@@ -24,18 +34,18 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-top: 100px;
   height: 100%;
-  }
+}
 
 .introColumn {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   padding-right: 20px;
   padding-left: 20px;
   flex: 1;
   max-width: 50%;
   max-height: 100%;
   flex-basis: 50%;
+  
 }
 
 .textBox>h1 {
@@ -62,7 +72,8 @@
   line-height: 16px;
   font-weight: 16px;
   letter-spacing: 1.4px;
-  padding-bottom: 10px;
+  padding-bottom: 10px;  
+  padding-top: 150px;
 }
 
 .otherColor {
@@ -111,8 +122,8 @@
 }
 
 .subLine {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .textWrapper {
@@ -126,7 +137,6 @@ flex-direction: row;
   margin-left: 100px;
 }
 
-
 @media (prefers-reduced-motion: no-preference) {
   .textWrapper {
     animation: Nav-logo-spin alternate 0.5s linear;
@@ -134,23 +144,31 @@ flex-direction: row;
 }
 
 @media screen and (max-width: 768px) {
+  .introBox {
+    background-position: center;
+    background-size: 800px;  
+  }
+
+  .devImg {
+    max-height: 500px;
+    padding: 5px 55px  90px 55px;
+    margin: auto;
+  }
+
   .introColumn {
     max-width: 100%;
-    flex-basis: 100%;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    
+    margin: auto 40px;
   }
   .textWrapper {
-    padding-bottom: 0;
-    margin-right: 60px;
-    margin-left: 60px;
-  }
-  .topLine {
-    margin-bottom: 0px;
+        margin-top: 100px;
+    margin: auto;
   }
   .textBox>h1 {
     font-size: 38px;
-    width: 350px;
+    width: 335px;
   }
   .subtitle {
     font-size: 15px;
