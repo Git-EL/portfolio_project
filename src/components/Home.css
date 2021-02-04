@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 .introBox {
-  padding: 153.5px 0;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  height: 100%;
+  width: 100%;
   background-image: linear-gradient(black, black), url("../images/science-fiction-1424446.jpg");
   background-repeat:repeat;
   background-blend-mode: saturation;
-  background-position:fixed;
-  background-size: 1000px;;
+  background-position:center;
+  background-size: 500px;
 }
 
 .devImg {
-  max-height: 550px;
-  padding-top: 10px;
+  max-height: 500px;
+  padding: 25px 100px 100px 100px;
   margin: auto;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .introRow {
@@ -22,7 +24,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-}
+  margin-top: 150px;
+  }
 
 .introColumn {
   margin-bottom: 15px;
@@ -30,6 +33,7 @@
   padding-left: 20px;
   flex: 1;
   max-width: 50%;
+  max-height: 100%;
   flex-basis: 50%;
 }
 
@@ -99,6 +103,12 @@
   margin-top: 3px;
 }
 
+.githubIcon:hover, .linkedIcon:hover, .xingIcon:hover {
+  color: #c4649f;
+  padding-left: 20px;
+  margin-top: 3px;
+}
+
 .subLine {
 display: flex;
 flex-direction: row;
@@ -114,6 +124,7 @@ flex-direction: row;
   margin-right: 100px;
   margin-left: 100px;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .textWrapper {

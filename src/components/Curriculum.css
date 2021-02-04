@@ -1,0 +1,8 @@
+.curriculumBox {
+  padding: 5px 150px 17px 150px;
+  background-image: linear-gradient(black, black), url("../images/science-fiction-1424446.jpg");
+  background-repeat:repeat;
+  background-blend-mode: saturation;
+  background-position:fixed;
+  background-size: 1000px;
+} 
