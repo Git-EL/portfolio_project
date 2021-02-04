@@ -9,7 +9,7 @@
   background-repeat:repeat;
   background-blend-mode: saturation;
   background-position:center;
-  background-size: 500px;
+  background-size: 800px;
 }
 
 .devImg {
@@ -24,7 +24,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-top: 150px;
+  margin-top: 100px;
+  height: 100%;
   }
 
 .introColumn {
